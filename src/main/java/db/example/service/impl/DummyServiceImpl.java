@@ -6,6 +6,7 @@ import db.example.model.DummyEntity;
 import db.example.respository.DummyRepository;
 import db.example.service.DummyService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,6 +14,7 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
+@Service
 public class DummyServiceImpl implements DummyService {
 
     private final DummyRepository dummyRepository;
