@@ -1,15 +1,13 @@
 package db.example.remote.dom;
 
+import lombok.Builder;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 
 @Data
-@EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@Builder
 public class User {
 
-    @EqualsAndHashCode.Include
     private final long id;
-
     private final String name;
     private final String username;
     private final String email;

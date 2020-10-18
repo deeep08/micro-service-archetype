@@ -1,8 +1,10 @@
 package db.example.remote.dom;
 
+import lombok.Builder;
 import lombok.Data;
 
 @Data
+@Builder
 public class Address {
 
     private final String street;
