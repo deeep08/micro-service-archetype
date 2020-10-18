@@ -5,14 +5,14 @@ import db.example.respository.DummyRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.UUID;
 import java.util.stream.IntStream;
 
 @RequiredArgsConstructor
 @Slf4j
-@Component
+@Configuration
 public class DatabaseConfig implements CommandLineRunner {
 
     private final DummyRepository dummyRepository;
